@@ -1,0 +1,9 @@
+.formulario{
+    &__form{
+        box-shadow: inset 3px 6px $main-shadow;
+        color: white;
+    }
+    &__extra{
+        box-shadow: inset 3px 6px $main-shadow;
+    }
+}
