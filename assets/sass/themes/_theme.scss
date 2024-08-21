@@ -1,0 +1,9 @@
+body{
+    background-color: $dark-color !important;
+}
+.bloque{
+    background-color: $main-shadow !important;
+    &__inside{
+        background-color: $main-color !important;
+    }
+}

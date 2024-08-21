@@ -9,38 +9,38 @@
 </head>
 <body>
     <section class="m-5">
-        <div class="container-fluid border p-5 rounded-4">
+        <div class="container-fluid bloque border-dark border p-5 rounded-4">
             <div class="row gap-5">
                 <!--form-->
-                <div class="col-12 col-md-3 border p-5 rounded-4">
+                <div class="bloque__inside col-12 col-md-3 border-dark border p-5 rounded-4 formulario">
                     <form>
-                        <div id="mostrar">
+                        <div class="border-dark border p-3 rounded-4 formulario__form" id="mostrar">
                             <div class="mb-3">
                                 <label for="numberOfGames" class="form-label">Definir numero de partidas</label>
                                 <input type="text" class="form-control" id="repeticiones">
                             </div>
                             <div class="col-12 d-flex justify-content-evenly my-5">
-                                <button type="button" class="btn btn-outline-primary" onclick="repetir()">Empezar</button>
+                                <button type="button" class="btn btn-light" onclick="repetir()">Empezar</button>
                             </div>
                         </div>
-                        <div class="col-12 my-5">
-                            <!--por rellenar-->
-                        </div>
                     </form>
+                    <div class="col-12 my-2 border-dark border p-3 rounded-4 formulario__extra" id="extra">
+                        <!--por rellenar-->
+                    </div>
                 </div>
                 <!--display-->
-                <div class="col-12 col-md-8 border p-5 rounded-4">
+                <div class="bloque__inside col-12 col-md-8 border-dark border p-5 rounded-4">
                     <!--selections-->
                     <div class="row justify-content-evenly">
-                        <div class="col-5 border p-5 rounded-4">
-                            <div class="selection">
+                        <div class="col-5 border-dark border p-5 rounded-4 selection">
+                            <div>
                                 <h4 class="selection__text text-center">You</h4>
                                 <div class="selection__area" id="selected-1">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-5 border p-5 rounded-4">
-                            <div class="selection">
+                        <div class="col-5 border-dark border p-5 rounded-4 selection">
+                            <div>
                                 <h4 class="selection__text text-center">CPU</h4>
                                 <div class="selection__area" id="selected-2">
                                 </div>
@@ -48,9 +48,9 @@
                         </div>
                     </div>
                     <!--resultados-->
-                    <div class="col-12 col-md-12 border mt-5 p-4 rounded-4">
-                        <div class="col-12 col-md-12 border p-4  rounded-4" id="stars"></div>
-                        <div class="col-12 col-md-12 border p-4 mt-3 rounded-4 text-center" id="show"></div>
+                    <div class="col-12 col-md-12 border-dark border mt-5 p-4 rounded-4 results">
+                        <div class="col-12 col-md-12 border-dark border p-4  rounded-4 results__stars" id="stars"></div>
+                        <div class="col-12 col-md-12 border-dark border p-4 mt-3 rounded-4 text-center results__text" id="show"></div>
                     </div>
                 </div>
             </div>

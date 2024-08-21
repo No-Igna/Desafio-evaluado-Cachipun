@@ -1,0 +1,20 @@
+.results{
+    box-shadow: 5px 10px $main-shadow;
+    
+    &__stars, &__text{
+        box-shadow: inset 3px 6px $main-shadow;
+        color: white;
+    }
+    &__stars i{
+        color: $secondary-color;
+        text-shadow: 3px 3px $secondary-Shadow;
+        rotate: 20deg;
+    }
+    &__text h3{
+        -webkit-text-stroke: 1px $dark-color;
+    }
+    &__text p{
+        font-size: 1.5rem;
+        -webkit-text-stroke: 1px $dark-color;
+    }
+}
