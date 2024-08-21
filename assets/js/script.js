@@ -97,16 +97,17 @@ function repetir(){
     repeticion = parseInt(document.getElementById("repeticiones").value);
     document.getElementById("mostrar").innerHTML=`
                 <div class="col-12 d-flex justify-content-evenly my-5">
+                            <label for="jugador" class="form-label">Escoja su opcion:</label>
                             <select class="form-select" aria-label="Default select example" id="jugador">
                                 <option value="0">Seleccione una opcion</option>
                                 <option value="1">piedra</option>
                                 <option value="2">papel</option>
-                                <option value="3">tijeras</option>>
+                                <option value="3">tijeras</option>
                             </select>
                         </div>
                         <div class="col-12 d-flex justify-content-evenly my-5">
-                            <button type="button" class="btn btn-outline-primary" onclick="jugar()">Jugar</button>
-                            <button type="button" class="btn btn-outline-primary" onclick="reinicio()">Reset</button>
+                            <button type="button" class="btn btn-light" onclick="jugar()">Jugar</button>
+                            <button type="button" class="btn btn-light" onclick="reinicio()">Reset</button>
                         </div>`;
     return repeticion,partidas;
 }
@@ -119,7 +120,7 @@ function reinicio(){
                                 <input type="text" class="form-control" id="repeticiones">
                             </div>
                             <div class="col-12 d-flex justify-content-evenly my-5">
-                                <button type="button" class="btn btn-outline-primary" onclick="repetir()">Empezar</button>
+                                <button type="button" class="btn btn-light" onclick="repetir()">Empezar</button>
                             </div>`;
     document.getElementById("stars").innerHTML=``;
     document.getElementById("show").innerHTML=``;    
@@ -143,7 +144,7 @@ function final() {
                     <h3>Perdiste...</h3>`;            
         }
         document.getElementById("mostrar").innerHTML=`
-                <p>Eso es todo!</p>
-                <button type="button" class="btn btn-outline-primary" onclick="reinicio()">Volver a empezar</button>`;
+                <h2 class="formulario__text m-5">Eso es todo!</h2 class="formulario__text m-5">
+                <button type="button" class="btn btn-light" onclick="reinicio()">Volver a empezar</button>`;
     }
 }

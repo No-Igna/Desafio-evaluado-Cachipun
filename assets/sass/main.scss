@@ -5,6 +5,15 @@
 // pages
 // themes
 // vendors
+@import 'abstracts/variables';
+
+@import 'base/reset';
+@import 'base/typography';
+
 @import 'components/selected';
+@import 'components/results';
+@import 'components/formulario';
+
+@import 'themes/theme';
 
 @import 'vendors/bootstrap';
